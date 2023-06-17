@@ -1,6 +1,6 @@
 {{ define "main" }}
   <article>
-    <h1>{{ if not .IsHome }}{{ .Title }}{{ end }}</h1>
+    <h1>{{ if .IsHome }}<span>Home</span>{{ else }}{{ .Title }}{{ end }}</h1>
     <ul class="posts-list">
       {{ range where .Paginator.Pages "Type" "!=" "page" }}
         <li class="posts-list-item">
