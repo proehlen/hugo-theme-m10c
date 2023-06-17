@@ -5,10 +5,10 @@
 }
 
 .app-header-avatar {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 100%;
-  border: 0.5rem solid $primary-color;
+  // border: 0.25rem solid $primary-color;
 }
 
 .app-container {
@@ -31,9 +31,20 @@
   color: $lightest-color;
   display: block;
   font-size: 2em;
-  margin: 0.67em 0;
+  margin-top: 0.67em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   font-weight: bold;
 }
+
+.app-header-description {
+  margin-top: -0.25rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0.67em;
+}
+
 
 @media (min-width: 940px) {
   .app-header {

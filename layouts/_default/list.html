@@ -1,6 +1,6 @@
 {{ define "main" }}
   <article>
-    <h1>{{ .Title }}</h1>
+    <h1>{{ if not .IsHome }}{{ .Title }}{{ end }}</h1>
     <ul class="posts-list">
       {{ range where .Paginator.Pages "Type" "!=" "page" }}
         <li class="posts-list-item">
@@ -12,6 +12,14 @@
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
             {{ .ReadingTime }} min read
           </span>
+          <p>{{ .Summary }}
+            {{ if .Truncated }}
+              <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+              <span>
+                <a href="{{ .RelPermalink }}">Read More…</a>
+              </span>
+            {{ end }}          
+          </p>
         </li>
       {{ end }}
     </ul>

@@ -2,3 +2,23 @@
   [module.hugoVersion]
     extended = true
     min = "0.55.0"
+
+[params]
+  author = "Peter Roehlen"
+  description = "Learning to code since 1981"
+  avatar = "/images/pete.jpg"
+
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+
+[[params.social]]
+  icon = "github"
+  name = "My Github"
+  url = "https://github.com/proehlen"
