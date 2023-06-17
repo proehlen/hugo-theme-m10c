@@ -9,13 +9,8 @@
   avatar = "/images/pete.jpg"
 
 [[menu.main]]
-  identifier = "home"
-  name = "Home"
-  url = "https://peter.roehlen.net/"
-
-[[menu.main]]
   identifier = "tags"
-  name = "Tags"
+  name = "Topics"
   url = "/tags/"
 
 [[params.social]]
