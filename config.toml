@@ -11,7 +11,7 @@
 [[menu.main]]
   identifier = "home"
   name = "Home"
-  url = "/"
+  url = "https://peter.roehlen.net/"
 
 [[menu.main]]
   identifier = "tags"
