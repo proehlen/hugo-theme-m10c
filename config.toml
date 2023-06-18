@@ -17,3 +17,8 @@
   icon = "github"
   name = "My Github"
   url = "https://github.com/proehlen"
+
+[[params.social]]
+  icon = "twitter"
+  name = "My Twitter"
+  url = "https://twitter.com/proehlen"
